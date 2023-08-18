@@ -12,6 +12,7 @@ import ProductPage from './pages/product/ProductPage';
 import { fetchProductsAsync } from './redux/productSlice';
 import { fetchCategoriesAsync } from './redux/categorySlice';
 import { CART_SLICE_ACTIONS } from './redux/cartSlice';
+import { Button } from 'react-bootstrap';
 
 
 function App() {
@@ -53,6 +54,8 @@ function App() {
   return (
     <div className="app">
       <Navbar />
+
+      <Button >I'm a Button</Button>
 
       <div className="container mt-5">
           <Routes>
