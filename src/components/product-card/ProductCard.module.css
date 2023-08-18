@@ -1,0 +1,18 @@
+.productCard {
+  justify-content: center;
+  align-items: center;
+  max-width: 25rem;
+}
+
+.productCardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productImage {
+  float: left;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}

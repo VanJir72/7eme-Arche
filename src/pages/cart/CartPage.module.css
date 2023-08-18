@@ -1,0 +1,28 @@
+.cartContainer {
+  min-height: 70vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkoutHeader {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid darkgrey;
+}
+
+.headerBlock {
+  text-transform: capitalize;
+  width: 23%;
+}
+
+.total {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 36px;
+}
