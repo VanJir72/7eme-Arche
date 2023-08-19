@@ -24,6 +24,7 @@ function App() {
    * Laction iici qui bouge l'useEfect est (( onLoad ))x
    * L'action qu'on envoie avec cette dispatch() dans cette useEffect() est aller fetcher les Products et les Categories.
    */
+  //////// Pour la page: http://localhost:3000/products
   useEffect(() => {
     dispatch(fetchProductsAsync());
     dispatch(fetchCategoriesAsync());
@@ -36,11 +37,13 @@ function App() {
    * Quand on passe ou finalise la Commande, on mettra directement le stock en localStorage en ZERO => cvd
    * => cvd : cart = [] = empty.
    */
-  
+  //////// Pour la page: http://localhost:3000/cart  =(Panier)
   useEffect(() => {
     const cartItemsStorage = localStorage.getItem('cart');
+    console.log('cartItemsStorage = ' + cartItemsStorage);
     if (cartItemsStorage) {
       const cartItems = JSON.parse(cartItemsStorage);
+      console.log(cartItems);
       dispatch(CART_SLICE_ACTIONS.setCartItems(cartItems));  //Relié peut être à l'action de <Button> [Add to cart]
     }
   }, [dispatch]);

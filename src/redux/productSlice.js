@@ -18,14 +18,14 @@ export const productSlice = createSlice({
    fetchProductsSuccess: (state, action) => {  /*Le Reducer ""fetchProductsSuccess()""  prned deux arguments =W> (statePrècednt, actioActuiil);*/
       return {
         ...state,
-        data: action.payload,
+        data: action.payload, //ici l'action ramènne des DATAs
         loading: false
       }
     },
     fetchProductsFailed: (state, action) => {
       return {
         ...state,
-        error: action.payload
+        error: action.payload //ici l'action ramènne des ERRORs
       }
     },
   }

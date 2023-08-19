@@ -5,7 +5,7 @@ export const cartMiddleware = (store) => (next) => (action) => {
   const nextState = next(action);
   if (action.type.startsWith('cart')) {
     const state = store.getState();
-    localStorage.setItem('cart', JSON.stringify(state.cart.items));
+    localStorage.setItem('cart', JSON.stringify(state.cart.items)); //ici on met les prodicts dans localStorage
   }
   return nextState
 }

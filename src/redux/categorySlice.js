@@ -33,6 +33,11 @@ export const categorySlice = createSlice({
 
 export const CATEGORIES_SLICE_ACTIONS = categorySlice.actions;
 
+
+
+
+
+
 export const fetchCategoriesAsync = () => async dispatch => {
   dispatch(CATEGORIES_SLICE_ACTIONS.fetchCategoriesStart());
   try {
@@ -42,5 +47,11 @@ export const fetchCategoriesAsync = () => async dispatch => {
     dispatch(CATEGORIES_SLICE_ACTIONS.fetchCategoriesFailed(error));
   }
 }
+
+
+
+
+
+
 
 export default categorySlice.reducer;
