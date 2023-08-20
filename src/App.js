@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Route, Routes, Navigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
-import Navbar from './components/navbar/Navbar';
+import Header from './components/header/Header'
+
 import CategoryPage from './pages/category/CategoryPage';
 import ProductsPage from './pages/products/ProductsPage';
 import CartPage from './pages/cart/CartPage';
@@ -43,7 +44,7 @@ function App() {
     console.log('cartItemsStorage = ' + cartItemsStorage);
     if (cartItemsStorage) {
       const cartItems = JSON.parse(cartItemsStorage);
-      console.log(cartItems);
+      // console.log(cartItems);
       dispatch(CART_SLICE_ACTIONS.setCartItems(cartItems));  //Relié peut être à l'action de <Button> [Add to cart]
     }
   }, [dispatch]);
@@ -55,7 +56,7 @@ function App() {
 
   return (
     <div className="app">
-      <Navbar />
+      <Header />
 
       <div className="container mt-5">
           <Routes>
