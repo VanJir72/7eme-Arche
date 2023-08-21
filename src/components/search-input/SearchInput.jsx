@@ -6,6 +6,7 @@ const SearchInput = ({ onChange }) => {
       <label className="form-label">Search products</label>
       <input
         type="text"
+        placeholder="Recherchez votre article"
         className="form-control"
         onChange={onChange}
       />

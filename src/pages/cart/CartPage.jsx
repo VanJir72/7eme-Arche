@@ -15,27 +15,27 @@ const CartPage = () => {
   return (
     <>
       <div className={styles.header}>
-        <h2>Cart</h2>
+        <h2>Panier</h2>
         <button className='btn btn-dark' onClick={() => dispatch(CART_SLICE_ACTIONS.clearCart())}>
-          Clear Cart
+          Vider le Panier
         </button>
       </div>
       <div className={styles.cartContainer}>
         <div className={styles.checkoutHeader}>
           <div className='header-block'>
-            <span>Product</span>
+            <span>Article</span>
           </div>
           <div className='header-block'>
-            <span>Title</span>
+            <span>Description</span>
           </div>
           <div className='header-block'>
-            <span>Quantity</span>
+            <span>Quantité</span>
           </div>
           <div className='header-block'>
-            <span>Price</span>
+            <span>Prix</span>
           </div>
           <div className='header-block'>
-            <span>Remove</span>
+            <span>Supprimer</span>
           </div>
         </div>
         {cartItems.map(cartItem => (
@@ -44,6 +44,11 @@ const CartPage = () => {
         <div className={styles.total}>
           {cartTotal}$
         </div>
+      </div>
+      <div >
+        <button className='btn btn-dark' onClick={console.log("Finaliser la Commande")}>
+          Finaliser la Commande
+        </button>
       </div>
     </>
   )

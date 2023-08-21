@@ -31,7 +31,7 @@ const CategoryPage = () => {
 
   return (
     <div>
-      <h2>{category.name} ({filteredProducts.length} products)</h2>
+      <h2>{category.name} ({filteredProducts.length} articles)</h2>   {/** You can delete this line later  */}
       <SearchInput onChange={handleSearchInputChange} />
       <ProductList products={filteredProducts} />
     </div>

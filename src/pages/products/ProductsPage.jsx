@@ -20,7 +20,7 @@ const ProductsPage = () => {
 
   return (
     <div>
-      <h2>All products ({filteredProducts.length} products)</h2>
+      <h2>Tous Articles ({filteredProducts.length} articles)</h2>  {/** You can delete this line later  */}
       <SearchInput onChange={handleSearchInputChange} />
       {error ? (
         <div className='alert alert-danger'>

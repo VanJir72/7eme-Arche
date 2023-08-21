@@ -10,15 +10,17 @@ const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const handleClick = (event) => {
+  const handleClick = (event) => { //Pour cliquer sur l'image et aller à la page de ce PRODUIT.
     event.preventDefault();
     navigate(`/products/${product.id}`);
   }
 
-  const handleAddToCart = (event) => {
+  const handleAddToCart = (event) => { //Pour le button [Add to cart].
     event.preventDefault();
     dispatch(CART_SLICE_ACTIONS.addItemToCart(product));
   }
+
+
 
   return (
     <div className={`card text-black ${styles.productCard}`}>
@@ -26,7 +28,7 @@ const ProductCard = ({ product }) => {
         <img
           src={product.images[0]}
           className="card-img-top"
-          alt="Apple Computer" />
+          alt="To be changed later !" />
       </div>
       <div className={`card-body ${styles.productCardBody}`}>
         <div className="text-center">
@@ -43,7 +45,7 @@ const ProductCard = ({ product }) => {
         </div>
         <div className="d-flex justify-content-center">
           <button className='btn btn-dark' type='button' onClick={handleAddToCart}>
-            Add to cart
+            Ajouter au Panier
           </button>
         </div>
       </div>

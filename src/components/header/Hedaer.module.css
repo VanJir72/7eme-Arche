@@ -1,4 +1,4 @@
-/* .cartWrapper {
+.cartWrapper {
   position: relative;
 }
 
@@ -12,7 +12,7 @@
   background-color: black;
   border-radius: 50%;
   font-size: 12px;
-} */
+}
 
 /* .iconCart{
   border: 1px solid black;

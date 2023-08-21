@@ -4,6 +4,7 @@ import {Route, Routes, Navigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
 import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
 
 import CategoryPage from './pages/category/CategoryPage';
 import ProductsPage from './pages/products/ProductsPage';
@@ -67,6 +68,8 @@ function App() {
             <Route path="/" element={<Navigate replace to="/products" />} />
           </Routes>
       </div>
+      <Footer />
+
     </div>
   );
 }

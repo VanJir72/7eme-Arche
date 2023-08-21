@@ -7,14 +7,14 @@ import NavItem from "react-bootstrap/NavItem"
 import NavLink from "react-bootstrap/NavLink"
 
 /****************************************([{ NEW NAVBAR}])****************************************/
-function Header() {
+function Footer() {
   return (
     <Navbar
       collapseOnSelect
       expand="lg"
       className="body-tertiary"
       variant="light"
-      bg="warning"
+      bg="primary"
     >
       <Container>
         <Navbar.Brand href="#home">Septiem Arche</Navbar.Brand>
@@ -57,7 +57,7 @@ function Header() {
   );
 }
 
-export default Header;
+export default Footer;
 
 /****************************************([{ OLD NAVBAR}])****************************************/
 // import { useSelector } from 'react-redux';

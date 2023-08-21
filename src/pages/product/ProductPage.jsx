@@ -37,7 +37,7 @@ const ProductPage = () => {
 
         <div className="d-flex justify-content-center mt-5">
           <button className="btn btn-dark" onClick={handleAddToCart}>
-            Add to cart
+            Ajouter au Panier
           </button>
         </div>
 
